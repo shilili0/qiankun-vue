@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 const menus = [
     {
       key: 'home',
@@ -16,13 +15,8 @@ const menus = [
 </script>
 
 <template>
-  
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
         <template v-for="item in menus" :key="item">
           <RouterLink :to="item.path">{{ item.title }}</RouterLink>
