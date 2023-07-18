@@ -26,8 +26,8 @@ import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   mode: 'history',
-  base: window.__POWERED_BY_QIANKUN__ ? "/vue" : "/",
-  history: createWebHashHistory('/vue'),
+  base: window.__POWERED_BY_QIANKUN__ ? "/vue3" : "/",
+  history: createWebHashHistory('/vue3'),
   routes: [
     {
       path: '/',

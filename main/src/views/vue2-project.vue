@@ -14,7 +14,11 @@ onMounted(() => {
   
   if (!window?.qiankunStarted) {
     window.qiankunStarted = true;
-    start();
+    start({
+      sandbox: {
+        experimentalStyleIsolation: true // 样式隔离
+      }
+    });
   }
 })
 
