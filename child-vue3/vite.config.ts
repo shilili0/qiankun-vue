@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    qiankun('vue', {
+    qiankun('vue3', {
       useDevMode: true
     })
   ],

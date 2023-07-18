@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="vue2App">
     <LayoutIndex />
   </div>
 </template>
@@ -17,7 +17,8 @@ export default {
 </script>
 
 <style>
-#app {
+#vue2App {
+  width: 800px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
