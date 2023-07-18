@@ -13,6 +13,13 @@ const apps:any = [
     container: "#subApp",  //挂载到主应用的哪个元素下
     activeRule: "/vue",//当我劫持到路由地址为/vue2时，我就把http://localhost:8001这个应用挂载到#subApp的元素下
     props:{}, // 给子应用传递数据
+  },
+  {
+    name: "child-vue",
+    entry: "//localhost:8002", ////默认会加载这个html,解析里面的js,动态执行（子应用必须支持跨域）里面,是用fetch去请求的数据
+    container: "#subApp2",  //挂载到主应用的哪个元素下
+    activeRule: "/vue2",//当我劫持到路由地址为/vue2时，我就把http://localhost:8001这个应用挂载到#subApp的元素下
+    props:{}, // 给子应用传递数据
   }
 ];
 export default apps;

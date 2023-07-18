@@ -11,6 +11,11 @@ const menus = [
       title: '第一个微应用-vue3',
       path: "/vue/child-vue3"
     },
+    {
+      key: 'vue2',
+      title: '第二个微应用-vue2',
+      path: "/vue2/child-vue2"
+    }
   ]
 </script>
 

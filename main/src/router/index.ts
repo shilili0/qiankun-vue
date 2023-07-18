@@ -14,6 +14,11 @@ const router = createRouter({
       path: '/vue/child-vue3/',
       name: 'child-vue3',
       component: () => import('@/views/AboutView.vue')
+    },
+    {
+      path: '/vue2/child-vue2/',
+      name: 'child-vue2',
+      component: () => import('@/views/vue2-project.vue')
     }
   ]
 })

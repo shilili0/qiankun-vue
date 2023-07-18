@@ -5,3 +5,5 @@
 
 [qiankun微应用配置-vue3](./child-vue3//README.md)
 
+[qiankun微应用配置-vue2](./child-vue2//README.md)
+
