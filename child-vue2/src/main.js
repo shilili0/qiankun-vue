@@ -5,6 +5,8 @@ import App from './App.vue'
 import "ant-design-vue/dist/antd.less";
 import './public-path'
 import router from "./router";
+// 绑定全局direction
+import "./plugins/direction"
 
 Vue.use(Antd)
 Vue.config.productionTip = false
