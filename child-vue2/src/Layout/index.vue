@@ -36,6 +36,7 @@ export default {
       collapsed: false,
       menus:[
         {name: 'v2-自定义指令-direction', value:'v2-direction',path: 'v2-direction'},
+        {name: 'v2-storeVuex', value:'v2-storeVuex',path: 'v2-storeVuex'},
         
       ]
     };

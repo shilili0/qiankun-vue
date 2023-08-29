@@ -8,6 +8,12 @@ import router from "./router";
 // 绑定全局direction
 import "./plugins/direction"
 
+// 注册全局插件
+import notify from '@/plugins/notify/notify'
+
+// 
+import store from '@/store/index'
+Vue.use(notify)
 Vue.use(Antd)
 Vue.config.productionTip = false
 // new Vue({
@@ -19,6 +25,7 @@ function render(props = {}) {
   const { container } = props
   instance = new Vue({
     router,
+    store,
     render: h => h(App)
   }).$mount(container ? container.querySelector('#app') : '#app')
 }

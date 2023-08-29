@@ -33,7 +33,17 @@ export default new Router({
               title: ['自定义指令']
           },
           component: () => import('@/views/direction/Index.vue')
-      },
+        },
+        {
+
+          path: '/v2-storeVuex',
+          name: 'v2-storeVuex',
+          meta: {
+              isLogin: true,
+              title: ['vuex']
+          },
+          component: () => import('@/views/storeVuex/Index.vue')
+        },
       ]
     }
   ]

@@ -9,6 +9,9 @@
     <div class="html"  v-text="html2"></div>
 
     <div v-resize:[direction].quiet="onResize"> window width is : {{ length }} px </div>
+    <button type="default" @click="showNotify">
+      showNotify
+    </button>
   </div>
 </template>
 
@@ -26,7 +29,11 @@ export default {
   },
   methods: {
     onResize(length){
+      
       this.length = length;
+    },
+    showNotify(){
+      this.$notify('展示弹框')
     }
   }
 }
